@@ -1,8 +1,4 @@
-.main-content__title, .logo {
-  font-family: 'PT Serif', serif;
-}
-
-.main-content__subtitle, .main-content__button, .menu__item {
+.main-content__subtitle, .main-content__button {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -19,17 +15,18 @@ body {
   margin: auto;
 }
 
-.logo, .menu {
-  display: inline-block;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
 }
 
+.logo, .menu {
+  display: inline-block;
+}
+
 .logo {
   padding: 40px 0;
+  font: bold 24px/32px pt_serifbold, arial, helvetica, sans-serif;
 }
 
 .menu {
@@ -39,6 +36,7 @@ body {
 
 .menu__item {
   padding: 0 13px;
+  font: medium 18px/21px 'robotomedium', arial, helvetica, sans-serif;
 }
 
 .menu__item:last-child {
@@ -59,6 +57,7 @@ body {
 .main-content__title {
   margin-top: 0;
   margin-bottom: 40px;
+  font: bold 66px/87px pt_serifbold, arial, helvetica, sans-serif;
 }
 
 .main-content__subtitle {
