@@ -26,9 +26,6 @@ body {
   position: relative;
   padding-left: 44px;
   font: bold 24px/32px 'pt_serifbold', arial, helvetica, sans-serif;
-  /*width: 190px;
-  height: 35px;
-  background: url('img/logo.svg')*/
 }
 
 .logo__circle {
@@ -45,11 +42,11 @@ body {
 .logo__circle_color_blue {
   left: 8px;
   top: 60%;
-  background: #C8DBFB;
+  background: #c8dbfb;
 }
 
 .logo__circle_color_dark-blue {
-  background: #0056EC;
+  background: #0056ec;
 }
 
 .menu {
