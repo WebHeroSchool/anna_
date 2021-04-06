@@ -1,17 +1,9 @@
-.main-content__title, .logo {
-  font-family: 'PT Serif', serif;
-}
-
-.main-content__subtitle, .main-content__button, .menu__item {
-  font-family: 'Roboto', sans-serif;
-}
-
 * {
   border: dashed 1px red;
 }
 
 body {
-  margin: 0px;
+  margin: 0;
 }
 
 .wrapper {
@@ -19,17 +11,42 @@ body {
   margin: auto;
 }
 
-.logo, .menu {
-  display: inline-block;
-}
-
 .header {
+  padding: 40px 0;
   display: flex;
   justify-content: space-between;
 }
 
+.logo,
+.menu {
+  display: inline-block;
+}
+
 .logo {
-  padding: 40px 0;
+  position: relative;
+  padding-left: 44px;
+  font: bold 24px/32px 'pt_serifbold', arial, helvetica, sans-serif;
+}
+
+.logo__circle {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.logo__circle_color_blue {
+  left: 8px;
+  top: 60%;
+  background: #c8dbfb;
+}
+
+.logo__circle_color_dark-blue {
+  background: #0056ec;
 }
 
 .menu {
@@ -38,11 +55,54 @@ body {
 }
 
 .menu__item {
-  padding: 0 13px;
+  position: relative;
+  margin-right: 26px;
+  font: 500 18px/21px 'robotomedium', arial, helvetica, sans-serif;
+  color: #000;
+  text-decoration: none;
+  transition: opacity 0.5s;
 }
 
 .menu__item:last-child {
-  padding-right: 0;
+  margin-right: 0;
+}
+
+.menu__item_active::after {
+  position: absolute;
+  display: block;
+  content: '';
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #0056ec;
+  opacity: 1;
+}
+
+.menu__item:hover {
+  opacity: 0.5;
+}
+
+.menu__item::after {
+  position: absolute;
+  left: 0;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: #0056ec;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.menu__item:hover::after {
+  position: absolute;
+  left: 0;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: #0056ec;
+  opacity: 1;
 }
 
 .main-section {
@@ -59,16 +119,19 @@ body {
 .main-content__title {
   margin-top: 0;
   margin-bottom: 40px;
+  font: bold 66px/87px 'pt_serifbold', arial, helvetica, sans-serif;
 }
 
 .main-content__subtitle {
   margin-top: 0;
   margin-bottom: 41px;
   width: 80%;
+  font: normal 22px/26px 'robotonormal', arial, helvetica, sans-serif;
 }
 
 .main-content__button {
   padding: 18px 21px;
+  font: 500 18px/21px 'robotomedium', arial, helvetica, sans-serif;
 }
 
 .image-content {
