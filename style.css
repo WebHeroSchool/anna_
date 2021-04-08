@@ -103,7 +103,7 @@ body {
 }
 
 .main {
-  padding: 74px 60% 200px 0;
+  padding: 74px 60% 269px 0;
   background: top right no-repeat url(img/mainimg.svg);
 }
 
@@ -113,7 +113,9 @@ body {
 }
 
 .main__title-text_highlight {
-  background: #ecf3ff;
+  background: linear-gradient(
+  180deg,
+  rgba(255,255,255,1) 15%, #ECF3FF 15%);
 }
 
 .main__subtitle {
@@ -135,4 +137,19 @@ body {
 
 .main__button:hover {
   opacity: 0.5;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.navigation__circle {
+  background: #c8dbfb;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  opacity: 0.7;
+  margin: 0 2px;
 }
