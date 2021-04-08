@@ -1,13 +1,9 @@
-* {
-  border: dashed 1px red;
-}
-
 body {
   margin: 0;
 }
 
 .wrapper {
-  width: 80%;
+  width: 79.6%;
   margin: auto;
 }
 
@@ -15,6 +11,7 @@ body {
   padding: 40px 0;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 130px;
 }
 
 .logo,
@@ -56,7 +53,7 @@ body {
 
 .menu__item {
   position: relative;
-  margin-right: 26px;
+  margin-right: 27px;
   font: 500 18px/21px 'robotomedium', arial, helvetica, sans-serif;
   color: #000;
   text-decoration: none;
@@ -64,13 +61,25 @@ body {
 }
 
 .menu__item:last-child {
-  margin-right: 0;
+  margin-right: 4px;
+}
+
+.menu__item::after {
+  position: absolute;
+  left: 0;
+  display: block;
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #0056ec;
+  opacity: 0;
+  transition: opacity 0.5s, width 0.5s;
 }
 
 .menu__item_active::after {
-  position: absolute;
   display: block;
   content: '';
+  position: absolute;
   left: 0;
   width: 100%;
   height: 3px;
@@ -80,18 +89,6 @@ body {
 
 .menu__item:hover {
   opacity: 0.5;
-}
-
-.menu__item::after {
-  position: absolute;
-  left: 0;
-  display: block;
-  content: '';
-  width: 100%;
-  height: 3px;
-  background: #0056ec;
-  opacity: 0;
-  transition: opacity 0.5s;
 }
 
 .menu__item:hover::after {
@@ -105,36 +102,37 @@ body {
   opacity: 1;
 }
 
-.main-section {
-  display: flex;
-  justify-content: space-between;
+.main {
+  padding: 74px 60% 200px 0;
+  background: top right no-repeat url(img/mainimg.svg);
 }
 
-.main-content {
-  margin-top: 206px;
-  margin-bottom: 317px;
-  max-width: 567px;
-}
-
-.main-content__title {
-  margin-top: 0;
-  margin-bottom: 40px;
+.main__title {
+  margin: 0 0 36px 0;
   font: bold 66px/87px 'pt_serifbold', arial, helvetica, sans-serif;
 }
 
-.main-content__subtitle {
-  margin-top: 0;
-  margin-bottom: 41px;
-  width: 80%;
-  font: normal 22px/26px 'robotonormal', arial, helvetica, sans-serif;
+.main__title-text_highlight {
+  background: #ecf3ff;
 }
 
-.main-content__button {
-  padding: 18px 21px;
+.main__subtitle {
+  margin: 0 0 43px 0;
+  font: normal 22px/25px 'robotonormal', arial, helvetica, sans-serif;
+  max-width: 77%;
+}
+
+.main__button {
+  display: inline-block;
+  padding: 18px 35px 18px 21px;
   font: 500 18px/21px 'robotomedium', arial, helvetica, sans-serif;
+  color: #fff;
+  background: #0056ec;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity 0.5s;
 }
 
-.image-content {
-  display: flex;
-  align-items: center;
+.main__button:hover{
+  opacity: 0.5;
 }
