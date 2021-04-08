@@ -133,6 +133,6 @@ body {
   transition: opacity 0.5s;
 }
 
-.main__button:hover{
+.main__button:hover {
   opacity: 0.5;
 }
