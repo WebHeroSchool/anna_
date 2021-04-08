@@ -114,11 +114,11 @@ body {
 
 .main__title-text_highlight {
   background:
-  linear-gradient(
+    linear-gradient(
     180deg,
-    rgba(255,255,255,1) 15%,
-    #ecf3ff 15%
-  );
+      rgba(255,255,255,1) 15%,
+      #ecf3ff 15%
+    );
 }
 
 .main__subtitle {
