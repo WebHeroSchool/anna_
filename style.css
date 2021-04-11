@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
 .wrapper {
   width: 79.6%;
   margin: auto;
@@ -155,4 +159,234 @@ body {
   border-radius: 50%;
   opacity: 0.7;
   margin: 0 2px;
+}
+
+@media (max-width: 1608px) {
+  .wrapper {
+    width: 67.89%;
+  }
+
+  .header {
+    margin-bottom: 85px;
+  }
+
+  .menu__item {
+    font: 500 14px/16px 'robotomedium', arial, helvetica, sans-serif;
+    margin-top: 10px;
+    margin-right: 26px;
+  }
+
+  .main {
+    padding: 13px 53% 147px 0;
+    background-size: 55.4%;
+  }
+
+  .main__title {
+    margin-bottom: 40px;
+    font: bold 50px/66.5px 'pt_serifbold', arial, helvetica, sans-serif;
+  }
+
+  .main__subtitle {
+    margin-bottom: 42px;
+    font: 500 18px/21.09px 'robotonormal', arial, helvetica, sans-serif;
+    max-width: 80%;
+    letter-spacing: 0.16px;
+  }
+
+  .main__button {
+    padding: 14px 25px 13px 16px;
+    font: 500 14px/16.41px 'robotomedium', arial, helvetica, sans-serif;
+  }
+
+  .navigation {
+    margin-bottom: 38px;
+  }
+}
+
+@media (max-width: 1352px) {
+  .wrapper {
+    width: 91%;
+  }
+
+  .header {
+    margin-bottom: 22px;
+  }
+
+  .menu__item:last-child {
+    margin-right: 0;
+  }
+
+  .main {
+    padding-top: 78px;
+  }
+
+  .main__title {
+    margin-bottom: 41px;
+    font: bold 50px/65px 'pt_serifbold', arial, helvetica, sans-serif;
+  }
+
+  .main__subtitle {
+    margin-bottom: 41px;
+    max-width: 367px;
+    letter-spacing: 0.19px;
+  }
+}
+
+@media (max-width: 1220px) {
+  .header {
+    margin-bottom: 82px;
+  }
+
+  .main {
+    padding-top: 18px;
+  }
+}
+
+@media (max-width: 985px) {
+  .main__title {
+    font: bold 40px/50px 'pt_serifbold', arial, helvetica, sans-serif;
+  }
+
+  .main__subtitle {
+    margin-bottom: 32px;
+    font: 500 16px/21.09px 'robotonormal', arial, helvetica, sans-serif;
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .header {
+    margin-bottom: 30px;
+    margin-left: 6px;
+    padding: 13px 0 24px 0;
+  }
+
+  .logo > span {
+    display: none;
+  }
+
+  .logo__circle {
+    margin-top: 16px;
+  }
+
+  .main {
+    text-align: center;
+    padding: 76.7% 0 0;
+    background-size: 82%;
+    background-position: top center;
+  }
+
+  .main__title {
+    margin: 0 auto 33px auto;
+    padding-left: 4px;
+    max-width: 240px;
+    font: bold 30px/39.75px 'pt_serifbold', arial, helvetica, sans-serif;
+  }
+
+  .main__subtitle {
+    margin: 0 auto 27px auto;
+    padding-left: 5px;
+    font: 500 16px/18.75px 'robotonormal', arial, helvetica, sans-serif;
+    max-width: 240px;
+  }
+
+  .main__button {
+    margin-bottom: 43px;
+    font: 500 14px/16.41px 'robotomedium', arial, helvetica, sans-serif;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #0056ec;
+    transition-duration: 0.25s;
+  }
+
+  .menu__btn > span::before {
+    content: '';
+    top: -7px;
+  }
+
+  .menu__btn > span::after {
+    content: '';
+    top: 7px;
+  }
+
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 28px;
+    right: 24px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .menu__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    visibility: hidden;
+    top: -10px;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #fff;
+    transition-duration: 0.25s;
+  }
+
+  .menu__item_burger {
+    display: flex;
+    padding: 12px 24px;
+    color: #000;
+    font: 500 30px/35px 'robotomedium', arial, helvetica, sans-serif;
+    text-decoration: none;
+    transition-duration: 0.25s;
+  }
+
+  #menu__toggle {
+    opacity: 0;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
 }
