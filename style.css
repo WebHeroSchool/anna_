@@ -355,7 +355,7 @@ body {
     padding: 0;
     list-style: none;
     background-color: #fff;
-    transition-duration: .25s;
+    transition-duration: 0.25s;
   }
 
   .menu__item_burger {
@@ -364,7 +364,7 @@ body {
     color: #000;
     font: 500 30px/35px 'robotomedium', arial, helvetica, sans-serif;
     text-decoration: none;
-    transition-duration: .25s;
+    transition-duration: 0.25s;
   }
 
   #menu__toggle {
