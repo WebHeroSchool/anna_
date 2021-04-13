@@ -163,17 +163,17 @@ body {
   margin: 0 2px;
 }
 
-  @keyframes move_title {
-    from {
-      transform: translateY(300px);
-      opacity: 0%;
-    }
-
-    100% {
-      transform: translateY(0);
-      opacity: 100%;
-    }
+@keyframes move_title {
+  from {
+    transform: translateY(300px);
+    opacity: 0%;
   }
+
+  100% {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}
 
 @media (max-width: 1608px) {
   .wrapper {
