@@ -295,14 +295,14 @@ body {
   }
 
   .main__title {
-    margin: 0 auto 33px auto;
+    margin: 0 auto 33px;
     padding-left: 4px;
     max-width: 240px;
     font: bold 30px/39.75px 'pt_serifbold', arial, helvetica, sans-serif;
   }
 
   .main__subtitle {
-    margin: 0 auto 27px auto;
+    margin: 0 auto 27px;
     padding-left: 5px;
     font: 500 16px/18.75px 'robotonormal', arial, helvetica, sans-serif;
     max-width: 240px;
